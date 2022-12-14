@@ -24,6 +24,10 @@ class CompletePayment(APIView):
         try:
 
             paymentserializer = PaymentSerializer(data=request.data)
+            if not RegisterUserModel.objects.filter(
+                email=request.data.get("user")
+            ).exists():
+                return Response({"message": "User does not exist"})
             if paymentserializer.is_valid():
                 paymentserializer.save()
                 return Response({"message": "Payment Completed Successfully"})
