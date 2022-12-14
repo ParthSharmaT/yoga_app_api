@@ -59,9 +59,13 @@ $ npm i
 ```
 $ npm start
 ```
-
-Demo Screens:
-
+### ER Diagram
+![ER](er.png)
+### Demo Screens
+Register:
+![Register](register.png)
+Payment:
+![Payment](payment.png)
 # License :memo:
 
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
