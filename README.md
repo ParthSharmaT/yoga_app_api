@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Yoga Registration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem Statement:
 
-## Available Scripts
+Assume that you are the CTO for the outsourcing firm which has been chosen to build an
+admission form for the Yoga Classes which happen every month.
+Requirements for the admission form are:
 
-In the project directory, you can run:
+- Only people within the age limit of 18-65 can enroll for the monthly classes and they will be paying the fees on a month on month basis. I.e. an individual will have to pay the fees every month and he can pay it any time of the month.
+- They can enroll any day but they will have to pay for the entire month. The monthly fee is
+  500/- Rs INR.
+- There are a total of 4 batches a day namely 6-7AM, 7-8AM, 8-9AM and 5-6PM. The participants can choose any batch in a month and can move to any other batch next
+  month. I.e. participants can shift from one batch to another in different months but in same month they need to be in same batch
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. User can Register anytime
+2. User can only pay for current month
+3. User can book a slot
+4. User can Pay 500 rs on booking slot.
+5. User can only pay after registration.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack:
 
-### `npm test`
+<img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/> <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"/><img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React
+- **Backend**: Django, Django Rest Framework
+- **IDE**: VS Code
+- **Version Control**: Git and GitHub
+- **Database**: SQLite
+- **Hosting**: render(not deployed)
 
-### `npm run build`
+### How to Get Started?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### GitHub Repository Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| S.No. | Branch Name                                                         | Purpose                    |
+| ----- | ------------------------------------------------------------------- | -------------------------- |
+| 1.    | [frontend](https://github.com/ParthSharmaT/yoga_app_api)            | contains all Frontend code |
+| 2.    | [backend](https://github.com/ParthSharmaT/yoga_app_api/tree/master) | contains all Backend code  |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend Setup Instructions
 
-### `npm run eject`
+- Fork and Clone the repo using
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+$ git clone https://github.com/ParthSharmaT/yoga_app_api
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Install the Dependencies from `npm`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+$ npm i
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Run the Server
 
-## Learn More
+```
+$ npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Demo Screens:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# License :memo:
 
-### Code Splitting
+This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Uses Git](https://forthebadge.com/images/badges/uses-git.svg)](https://github.com/ParthSharmaT/yoga_app_api)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/ParthSharmaT/yoga_app_api)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/ParthSharmaT/yoga_app_api)
+[![Built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ParthSharmaT/yoga_app_api)

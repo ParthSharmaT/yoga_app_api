@@ -25,16 +25,15 @@ const SigninForm = () => {
         body: JSON.stringify(data),
       })
         .then((res) => res.json())
-        .then((data) => {
-          if (data.error) {
-            setError(JSON.stringify(data.error));
+        .then((res) => {
+          console.log(res);
+          if (res.error) {
+            setError(JSON.stringify(res.error));
           } else {
-            setError(JSON.stringify(data.message));
+            setError(JSON.stringify(res.message));
           }
         })
         .catch((err) => setError(err));
-
-      console.log(data);
       setSuccess("Form submitted successfully");
     }
   };

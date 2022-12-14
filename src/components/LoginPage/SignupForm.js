@@ -25,7 +25,7 @@ const SignupForm = () => {
         age: age,
         gender: gender,
       };
-      await fetch("http://35.182.246.164:8000/api/register/", {
+      await fetch("http://localhost:8000/api/register/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
